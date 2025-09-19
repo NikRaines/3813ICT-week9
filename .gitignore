@@ -3,4 +3,7 @@ node_modules/
 .env
 dist/
 .angular/
-data/db/
+data/
+*.lock
+*.wt
+*.bson

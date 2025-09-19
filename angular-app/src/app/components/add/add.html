@@ -1,0 +1,29 @@
+<h2>Add Product</h2>
+<form (ngSubmit)="addProduct()">
+  <label>ID:
+    <input type="number" [(ngModel)]="product.id" name="id" required>
+  </label>
+  <br><br>
+
+  <label>Name:
+    <input type="text" [(ngModel)]="product.name" name="name" maxlength="50">
+  </label>
+  <br><br>
+
+  <label>Description:
+    <input type="text" [(ngModel)]="product.description" name="description" maxlength="255">
+  </label>
+  <br><br>
+
+  <label>Price:
+    <input type="number" [(ngModel)]="product.price" name="price" step="0.01">
+  </label>
+  <br><br>
+
+  <label>Units:
+    <input type="number" [(ngModel)]="product.units" name="units">
+  </label>
+  <br><br>
+
+  <button type="submit">Add Product</button>
+</form>
